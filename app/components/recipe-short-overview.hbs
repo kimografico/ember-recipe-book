@@ -1,0 +1,9 @@
+{{! template-lint-disable no-invalid-interactive }}
+<div class="recipe-overview" {{on "click" this.toggleExpand}}>
+  <h3>{{@title}}</h3>
+
+  {{#if this.isExpanded}}
+    <p class="recipe-detail">{{@description}}</p>
+    <LinkTo @route="recipes/details" @model={{@id}}>Details</LinkTo>
+  {{/if}}
+</div>
