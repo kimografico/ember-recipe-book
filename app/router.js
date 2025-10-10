@@ -10,4 +10,5 @@ Router.map(function () {
   this.route('recipes', { path: '/' }, function () {});
   this.route('recipes/details', { path: '/:recipe_id' }, function () {});
   this.route('create-recipe');
+  this.route('favorites');
 });
