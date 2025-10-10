@@ -7,7 +7,7 @@ export default class RecipesDetailsController extends Controller {
   @service router;
 
   @action deleteRecipe() {
-    console.log("Delete recipe action triggered in controller");
+    console.log('Delete recipe action triggered in controller');
     this.recipeData.deleteRecipe(this.model.id);
     this.router.transitionTo('recipes');
   }

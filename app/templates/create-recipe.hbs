@@ -4,21 +4,32 @@
 <form>
   <div class="form-group">
     <label>Title</label>
-    <input {{ on "input" this.updateTitle }} value="{{ this.title }}" type="text" />
+    <input {{on "input" this.updateTitle}} value="{{this.title}}" type="text" />
   </div>
   <div class="form-group">
     <label>Description</label>
-    <input {{ on "input" this.updateDescription }} value="{{ this.description }}" type="text" />
+    <input
+      {{on "input" this.updateDescription}}
+      value="{{this.description}}"
+      type="text"
+    />
   </div>
   <div class="form-group">
     <label>Ingredients (comma separated)</label>
-    <input {{ on "input" this.updateIngredients }} value="{{ this.ingredients }}" type="text" />
+    <input
+      {{on "input" this.updateIngredients}}
+      value="{{this.ingredients}}"
+      type="text"
+    />
   </div>
   <div class="form-group">
     <label>Instructions</label>
-    <textarea {{ on "input" this.updateInstructions }} value="{{ this.instructions }}" ></textarea>
+    <textarea
+      {{on "input" this.updateInstructions}}
+      value="{{this.instructions}}"
+    ></textarea>
   </div>
   <div class="text-center">
-    <button {{ on "click" this.createRecipe }} type="submit">Create Recipe</button>
+    <button {{on "click" this.createRecipe}} type="submit">Create Recipe</button>
   </div>
 </form>
